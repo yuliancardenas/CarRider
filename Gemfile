@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'sinatra'
+gem 'sequel'
+gem 'pg'
+gem 'rspec'
+gem 'faraday'
+gem 'dry-validation'
+gem 'rerun'
+gem 'pry'
+gem 'geokit'
