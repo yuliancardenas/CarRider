@@ -6,13 +6,14 @@ Una Aplicacion desarrollada en Ruby.
 ## Instalación
 
   - Crear base de datos vacia car_riders en PosgreSQL con las credenciales que desees.
-  - Ejecutar: `sequel -m db/migrations postgres://localhost/car_riders`
   - Ejecutar: `bundle install`
+  - Ejecutar: `sequel -m db/migrations postgres://username:password@localhost:port/car_riders`
   - Crear archivo `.env` en el directorio raiz del proyecto, con las siguinetes variables de entorno:
     ```bash
         export WOMPI_PUBLIC_KEY=pub_test_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
         export WOMPI_PRIVATE_KEY=prv_test_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
         export HOST=localhost
+        export PORT=XXXX
         export DATABASE=car_riders
         export USER=XXXXX
         export PASSWORD=XXXXXX
@@ -56,7 +57,7 @@ Para probar los endpoints hay que seguir los siguientes pasos:
 
 ### Finalizar viaje
 
-- Path:  http://localhost:9292/v1/rides/3/finish-ride
+- Path:  http://localhost:9292/v1/rides/1/finish-ride
 - Method: PUT
 - Body: 
   ```json
